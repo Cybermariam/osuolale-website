@@ -82,17 +82,17 @@ const Footer = () => {
           </p>
 
           <a
-            href="tel:+2348012345678"
+            href="tel:+2349169146370"
             className="inline-flex items-center text-white hover:text-(--brand-primary) transition-colors"
           >
-            +234 801 234 5678
+            +2349169146370
           </a>
 
           <a
-            href="mailto:hello@osuolale.com"
+            href="mailto:Osuolalesodiq4@gmail.com"
             className="flex items-center gap-2 mt-5 text-[#B5B3B0] hover:text-white transition-colors"
           >
-            hello@osuolale.com
+            Osuolalesodiq4@gmail.com
           </a>
         </div>
       </div>
