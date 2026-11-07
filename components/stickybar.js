@@ -4,7 +4,13 @@ export default function StickyBar() {
       <div>Trusted building supplies across Lagos & nearby states</div>
       <div className="flex gap-4">
         <div>Mon–Sat, 8:00am–6:00pm</div>
-        <div>+234 123 456 7890</div>
+
+        <a
+          href="tel:+2349169146370"
+          className="inline-flex items-center text-white hover:text-(--brand-primary) transition-colors"
+        >
+          +2349169146370
+        </a>
       </div>
     </section>
   );
