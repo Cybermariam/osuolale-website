@@ -20,7 +20,7 @@ export default function Home() {
             <div className="flex gap-2 w-60 border border-[#cfcbc4] items-center p-3 mt-10">
               <div className="w-2 h-2 rounded-full  bg-(--brand-primary) "></div>
 
-              <div className=" text-(--text-secondary) text-sm font-bold  leading-[1.39px]">
+              <div className=" text-(--text-secondary) bg-white text-sm font-bold  leading-[1.39px]">
                 BUILT FOR BETTER PROJECTS
               </div>
             </div>
@@ -38,13 +38,15 @@ export default function Home() {
                 <div className="text-sm font-bold">Explore Products</div>
                 <FaArrowRight />
               </button>
-              <button
-                className="flex items-center justify-center gap-2 border-[#cfcbc4] border 
+              <a
+                href="https://wa.me/2349169146370"
+                rel="noopener noreferrer"
+                className="flex items-center bg-white justify-center gap-2 border-[#cfcbc4] border 
                        p-4 w-full md:w-50 md:p-2"
               >
                 <FaWhatsapp className="font-bold" />
-                <div className="text-sm font-bold ">Enquire on Whatsapp</div>
-              </button>
+                <div className="text-sm font-bold  ">Enquire on Whatsapp</div>
+              </a>
             </div>
 
             <div className="w-full h-px bg-[#cfcbc4] mt-8 mb-7"></div>
@@ -106,7 +108,6 @@ export default function Home() {
       <DeliveryInformation />
       <CustomerStories />
       <CallToAction />
-      <Footer />
     </main>
   );
 }

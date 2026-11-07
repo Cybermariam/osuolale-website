@@ -18,7 +18,7 @@ const CallToAction = () => {
       <div className="flex flex-col sm:flex-row gap-3 mt-6 lg:mt-0 shrink-0 mb-5">
         <button
           type="button"
-          className="inline-flex items-center justify-center gap-3 border border-[#cfcbc4] text-(--text-primary) font-semibold px-6 py-4"
+          className="bg-white inline-flex items-center justify-center gap-3 border border-[#cfcbc4] text-(--text-primary) font-semibold px-6 py-4"
         >
           <FaWhatsapp aria-hidden="true" className="text-xl" />
           WhatsApp Us

@@ -29,7 +29,7 @@ const PopularProducts = () => {
           <Link
             key={product.slug}
             href={`/products/${product.slug}`}
-            className="flex flex-col border justify-between p-4 bg-(--page-background) border-[#E8E6E1]"
+            className="flex flex-col border justify-between p-4 bg-white border-[#E8E6E1]"
           >
             <Image
               src={product.image}
