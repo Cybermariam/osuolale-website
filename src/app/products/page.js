@@ -1,17 +1,34 @@
-import { CgProductHunt } from "react-icons/cg";
+"use client";
+
+import { useSearchParams, useRouter } from "next/navigation";
 import ProductCategories from "./components/ProductCategories";
+import ProductGrid from "./components/ProductGrid";
+import CallToAction from "../../../components/CallToAction";
 
 export default function Products() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const selectedCategory = searchParams.get("category") || "All products";
+
+  const setSelectedCategory = (category) => {
+    if (category === "All products") {
+      router.push("/products");
+    } else {
+      router.push(`/products?category=${encodeURIComponent(category)}`);
+    }
+  };
+
   return (
-    <main className="w-full py-12  bg-white ">
+    <main className="w-full pt-12  bg-white ">
       <section className="pb-15">
         <div className=" mx-auto max-w-5xl px-6 text-center">
           <p className=" text-xs leading-4 tracking-[2.16px] font-bold text-[#A55E29]">
             PRODUCT CATALOGUE
           </p>
-          <h2 className="lg:text-6xl  lg:leading-[1.1] my-4 text-4xl font-semibold leading-10 tracking-[-1.8px] text-(--text-primary)">
+          <h1 className="lg:text-6xl  lg:leading-[1.1] my-4 text-4xl font-semibold leading-10 tracking-[-1.8px] text-(--text-primary)">
             Materials for every stage of your build.
-          </h2>
+          </h1>
 
           <p className="leading-7 text-[#6B6762]">
             Explore dependable essentials sourced from trusted manufacturers.
@@ -19,7 +36,12 @@ export default function Products() {
           </p>
         </div>
       </section>
-      <ProductCategories />
+      <ProductCategories
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
+      <ProductGrid selectedCategory={selectedCategory} />
+      <CallToAction />
     </main>
   );
 }

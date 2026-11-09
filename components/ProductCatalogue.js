@@ -29,7 +29,7 @@ const ProductCatalogue = () => {
           );
           return (
             <Link
-              href={`/products?category=${category}`}
+              href={`/products?category=${encodeURIComponent(category)}`}
               key={category}
               className="flex flex-col border justify-between p-4 bg-(--page-background) border-[#E8E6E1]"
             >

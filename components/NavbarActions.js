@@ -8,6 +8,7 @@ export default function NavbarActions({ mobile, onLinkClick }) {
       <a
         href="https://wa.me/2349169146370"
         rel="noopener noreferrer"
+        target="_blank"
         onClick={onLinkClick}
         className="flex items-center gap-2 border-[#cfcbc4] border bg-white 
                  p-2 justify-center"

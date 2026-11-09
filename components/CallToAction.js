@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CallToAction = () => {
   return (
-    <section className="bg-(--page-background) py-16 lg:py-24 px-6 md:px-12 lg:px-16 lg:flex lg:items-center lg:justify-between lg:gap-8">
+    <section className="bg-[#E8E6E1] py-16 lg:py-24 px-6 md:px-12 lg:px-16 lg:flex lg:items-center lg:justify-between lg:gap-8">
       <div className="lg:max-w-4xl">
         <p className="text-xs font-bold text-[#A55E29] leading-4 tracking-[2.16px]">
           READY TO ORDER?

@@ -34,12 +34,16 @@ export default function Home() {
               builders, contractors, and homeowners across Nigeria.
             </div>
             <div className="flex flex-col  md:flex-row gap-4 mt-4 md:items-center  ">
-              <button className="flex gap-2 justify-center items-center mt-6 md:mt-0 bg-(--brand-primary) text-white p-3 md:w-50">
+              <a
+                href="/products"
+                className="flex gap-2 justify-center items-center mt-6 md:mt-0 bg-(--brand-primary) text-white p-3 md:w-50"
+              >
                 <div className="text-sm font-bold">Explore Products</div>
                 <FaArrowRight />
-              </button>
+              </a>
               <a
                 href="https://wa.me/2349169146370"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center bg-white justify-center gap-2 border-[#cfcbc4] border 
                        p-4 w-full md:w-50 md:p-2"
