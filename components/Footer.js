@@ -7,10 +7,11 @@ const exploreLinks = [
 ];
 
 const productLinks = [
-  "Cement & Blocks",
-  "Iron Rods",
-  "Roofing Materials",
-  "Plumbing Materials",
+  { name: "Cement & Blocks", category: "Cement" },
+  { name: "Iron Rods", category: "Iron Rods" },
+  { name: "Roofing Materials", category: "Roofing" },
+  { name: "Plumbing Materials", category: "Plumbing" },
+  { name: "Tiles", category: "Tiles" },
 ];
 
 const Footer = () => {
@@ -59,12 +60,12 @@ const Footer = () => {
 
           <ul className="flex flex-col gap-5">
             {productLinks.map((product) => (
-              <li key={product}>
+              <li key={product.category}>
                 <Link
-                  href="/products"
+                  href={`/products?category=${encodeURIComponent(product.category)}`}
                   className="text-white/70 hover:text-white transition-colors leading-5 text-sm"
                 >
-                  {product}
+                  {product.name}
                 </Link>
               </li>
             ))}
