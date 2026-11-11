@@ -1,11 +1,12 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import ProductCategories from "./components/ProductCategories";
 import ProductGrid from "./components/ProductGrid";
 import CallToAction from "../../../components/CallToAction";
 
-export default function Products() {
+function ProductsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -43,5 +44,12 @@ export default function Products() {
       <ProductGrid selectedCategory={selectedCategory} />
       <CallToAction />
     </main>
+  );
+}
+export default function Products() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <ProductsContent />
+    </Suspense>
   );
 }
