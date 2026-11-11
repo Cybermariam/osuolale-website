@@ -16,14 +16,17 @@ const CallToAction = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3 mt-6 lg:mt-0 shrink-0 mb-5">
-        <button
-          type="button"
+        <a
+          href={`https://wa.me/2349169146370?text=${encodeURIComponent(
+            "Hello, I'm interested in your building materials. Please provide more information.",
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-white inline-flex items-center justify-center gap-3 border border-[#cfcbc4] text-(--text-primary) font-semibold px-6 py-4"
         >
           <FaWhatsapp aria-hidden="true" className="text-xl" />
-          WhatsApp Us
-        </button>
-
+          Enquire on WhatsApp
+        </a>
         <Link
           href="/contact"
           className="inline-flex items-center justify-center gap-3 bg-(--brand-primary) text-white font-semibold px-6 py-5 hover:bg-[#af622c] transition-colors"
