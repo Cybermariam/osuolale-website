@@ -1,10 +1,12 @@
 import CallToAction from "../../../components/CallToAction";
 import CustomerStories from "../../../components/CustomerStories";
+import OurCommitment from "./components/ OurCommitment";
+import OurStory from "./components/OurStory";
 
 export default function About() {
   return (
-    <main className="w-full pt-12  bg-white ">
-      <section className="pb-15">
+    <main className="w-full pt-12 bg-white ">
+      <section className="pb-15 lg:pb-20">
         <div className=" mx-auto max-w-5xl px-6 text-center">
           <p className=" text-xs leading-4 tracking-[2.16px] font-bold text-[#A55E29]">
             ABOUT OSUOLALE
@@ -20,6 +22,8 @@ export default function About() {
           </p>
         </div>
       </section>
+      <OurStory />
+      <OurCommitment />
       <CustomerStories />
       <CallToAction />
     </main>
