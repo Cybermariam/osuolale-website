@@ -14,14 +14,17 @@ export default function NavbarActions({ mobile, onLinkClick }) {
                  p-2 justify-center"
       >
         <FaWhatsapp />
-        <span>Whatsapp</span>
+        <span>
+          <span className="hidden md:inline">WhatsApp</span>
+          <span className="md:hidden">Enquire on WhatsApp</span>
+        </span>
       </a>
       <a
         href="https://wa.me/2349169146370?text=Hello%20Osuolale%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20building%20materials."
         target="_blank"
         rel="noopener noreferrer"
         onClick={onLinkClick}
-        className="  bg-(--brand-primary) text-white p-2 items-center justify-center"
+        className="bg-(--brand-primary) text-white p-2 items-center justify-center text-center hidden md:flex"
       >
         Request a Quote
       </a>
